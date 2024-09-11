@@ -3,6 +3,9 @@ body{
     height: auto;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 #top-bar{
     width: 100%;
     height: 35px;
@@ -102,7 +105,7 @@ body{
                     }
 .main-containers{
     width: 100%;
-    border: 1px solid black;
+
     margin-bottom: 30px;
 }
 /* FIRST CONTAINER BELOW HERE */
@@ -112,6 +115,7 @@ body{
         flex-direction: column;
         background-image: url("shattered-glass.jpg");
         background-size: cover;
+        background-repeat: no-repeat;
 
     }
         .first-boxes{
@@ -133,98 +137,97 @@ body{
                     font-size: 30px;
                 }
 /* SECOND CONTAINER BELOW HERE */
-    #second-container{
-        height: 400px;
+#second-container{
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+    #second-container-top{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-        #second-container-top{
-            width: 100%;
-            height: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            margin-bottom: 25px;
+        #top-half{
+            width: 50%;
+            height: 30%;
         }
-        #service-explain{
-            width: 100%;
-            height: 20%;
-            font-size: 25px;
-            line-height: 25px;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        #second-container-bottom{
-            width: 100%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-            .second-container-sides{
-                width: 100%;
-                height: 10%;
+            #service-header{
+                font-size: 50px;
+                text-align: center;
+                font-weight: bold;
             }
-            #second-container-middle{
-                width: 100%;
-                height: 80%;
+        #bottom-half{
+            width: 50%;
+            height: 70%;
+        }
+            #service-bio{
+                font-size: 25px;
+                text-align: center;
+            }
+    #second-container-bottom{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+        .box-containers{
+            width: 90%;
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+            .second-container-boxes{
+                width: 25%;
+                height: 100%;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                background: rgba(0, 0, 0, 0.103);
             }
-                .middle-container-pieces{
-                    height: 100%;
-                }
-                    #service-bios-container{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 50%;
-                    }
-                        .services-bios{
-                            display: flex;
-                            text-align: center;
-                            font-size: 25px;
-                            display: none;
-                        }
-            #second-container-left{
+                .service-headers{
+                    width: 100%;
+                    height: 20%;
                     display: flex;
-                    flex-direction: row;
-                    width: 80%;
+                    align-items:center;
+                    justify-content:center;
+                    text-align: center;
+                    font-size: 35px;
+                    font-weight: bold;
                 }
-                    .left-side-boxes{
-                        width: 16.6%;
-                        height: 100%;
-                    }
-            #second-container-right{
+                .service-bios{
+                    width: 90%;
+                    height: 90%;
                     display: flex;
-                    flex-direction: row;
-                    width: 80%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 25px;
                 }
-                    .right-side-boxes{
-                        width: 16.6%;
-                        height: 100%;
+                    #first-boxes-two{
+                        background-image: url(background-one.jpg);
+                        background-size: cover;
                     }
-                        .service-buttons{
-                            width: 100%;
-                            height: 100%;
-                            cursor: pointer;
-                            font-size: 20px;
-                            transition: transform 0.3s ease, box-shadow 0.3s ease;
-                            border: 1px solid black;
-                            border-radius: 25px;
-                            background: white;
-                        }
-                            .service-buttons:hover{
-                                transform: scale(1.1);
-                                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-                            }
-                                .service-buttons.selected {
-                                    background-color: #1d1d1d44; /* Dark blue background when selected */
-                                    color: #fa0000; /* White text when selected */
-                                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow */
-                                }
+                    #second-boxes-three{
+                        background-image: url(background-two.jpg);
+                        background-size: cover;
+                    }
+                    #third-boxes-two{
+                        background-image: url(background-three.jpg);
+                        background-size: cover;
+                    }
+                    #fourth-boxes-three{
+                        background-image: url(background-four.jpg);
+                        background-size: contain;
+                    }
+/* THIRD CONTAINER BELOW HERE */
 #third-container{
     height: 700px;
 }
@@ -241,6 +244,7 @@ body{
         }
             #bottom-left{
                 display: flex;
+                border: 1px solid black;
             }
                 #google-map{
                     height: 100%;
@@ -279,3 +283,9 @@ body{
                     #facebook-text-color{
                         color: white;
                     }
+
+
+#buffer-box-one{
+    width: 100%;
+    height: 200px;
+}
